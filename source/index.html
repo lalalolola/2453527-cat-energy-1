@@ -1,33 +1,116 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-  <header>
-    <img src="" alt="">
-    <img src="" alt="">
-    <nav>
-      <ul>
-        <li>главная</li>
-        <li>каталог продукции</li>
-        <li>подбор программы</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h1>Функциональное питание для котов</h1>
-      <p>Занялся собой? Займись котом!</p>
-      <img src="" alt="">
-      <a href="form.html"></a>
-    </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-  </main>
-  <footer></footer>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo logo-image" href="">
+        <img src="" alt="Энергичный суперкот">
+      </a>
+      <a class="main-header__logo logo" href="">
+        <img src="" alt="Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="hero">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Функциональное питание для котов</h1>
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
+          <img class="hero__image" src="" alt="Фирменная баночка корма Cat Energy с курицей">
+          <a class="button button--primary" href="form.html"></a>
+        </div>
+      </section>
+      <section class="programs">
+        <div class="programs-wrapper">
+          <h2 class="visually-hidden">Программы питания для котов</h2>
+          <ul class="programs__list">
+            <li class="program__item program__item--to-lose">
+              <h3 class="program__title">Похудение</h3>
+              <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="program__link" href="">Каталог slim</a>
+            </li>
+            <li class="program__item program__item--to-build">
+              <h3 class="program__title">Набор массы</h3>
+              <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="program__link" href="">Каталог pro</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="how-it-works">
+        <div class="how-it-works__wrapper">
+          <h2 class="how-it-works__title">Как это работает</h2>
+          <ol class="how-it-works__list">
+            <li class="how-it-works__item how-it-works__item--useful">Функциональное питание содержит только полезные питательные вещества.</li>
+            <li class="how-it-works__item how-it-works__item--comfortable">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+            <li class="how-it-works__item how-it-works__item--few">Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <li class="how-it-works__item how-it-works__item--quickly">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          </ol>
+        </div>
+      </section>
+      <section class="result">
+        <div class="result__wrapper">
+          <h2 class="result__title">Живой пример</h2>
+          <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <dl class="result__list">
+            <div class="result__item">
+              <dt class="result__number">
+                5 кг
+              </dt>
+              <dd class="result__description">
+                снижение веса
+              </dd>
+            </div>
+            <div class="result__item">
+              <dt class="result__number">
+                60 дней
+              </dt>
+              <dd class="result__description">
+                затрачено времени
+              </dd>
+            </div>
+            <div class="result__item result__item--lead">
+              <dt class="result__number result__number--lead">
+                15 000 руб.
+              </dt>
+              <dd class="result__description result__description--lead">
+                Затраты на питание:
+              </dd>
+            </div>
+          </dl>
+          <div class="result__photos">
+            <img class="result__image" src="" alt="Кот Борис до программы питания кормом Cat Energy Slim">
+            <img class="result__image" src="" alt="Кот Борис после программы питания кормом Cat Energy Slim">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
