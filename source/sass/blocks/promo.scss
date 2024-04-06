@@ -1,0 +1,21 @@
+.promo {
+  background-image: url("../../img/catalog/promo-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $special-fonts-color;
+  width: 279px;
+  height: 289px;
+  display: flex;
+}
+
+.promo__wrapper {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.promo__description {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 187px;
+  text-align: center;
+}
