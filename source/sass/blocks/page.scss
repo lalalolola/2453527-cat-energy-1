@@ -1,0 +1,16 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: min-content 1fr min-content;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $primary-fonts-color;
+  max-width: 320px;
+}

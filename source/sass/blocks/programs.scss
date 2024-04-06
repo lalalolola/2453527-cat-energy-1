@@ -1,0 +1,28 @@
+.programs__list {
+  list-style: none;
+  padding: 0;
+}
+
+.programs__item {
+  background-color: $optional-background-color;
+}
+
+.programs__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.programs__description {
+  color: $secondary-fonts-color;
+  font-family: "Lato", sans-serif;
+}
+
+.programs__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: $primary-fonts-color;
+}
