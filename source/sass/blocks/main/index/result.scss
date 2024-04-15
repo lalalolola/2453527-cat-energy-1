@@ -15,6 +15,7 @@
 
 .result__list {
   display: grid;
+  margin: 0 0 20px 0;
   grid-template-columns: 1fr 1fr;
   column-gap: 32px;
 }
@@ -42,8 +43,7 @@
   max-width: 87px;
   min-width: 87px;
   text-align: center;
-  margin: 0;
-  margin-top: -9px;
+  margin: -9px 0 20px;
   background-color: $optional__background-color;
 }
 
@@ -56,10 +56,30 @@
 
 .result__item--price {
   grid-column: 1 / -1;
+  flex-direction: row;
+  margin: 0 auto;
 }
 
 .result__price-number,
 .result__price-description {
   @include fonts(14px, 20px);
+  margin: 0;
   font-family: "Oswald", sans-serif;
+}
+
+.result__photos {
+  display: flex;
+  justify-content: space-between;
+  max-width: 280px;
+  overflow: hidden;
+}
+
+.result__image {
+  object-fit: cover;
+  overflow: hidden;
+  object-position: left;
+}
+
+.result__image-after {
+  object-position: right;
 }
