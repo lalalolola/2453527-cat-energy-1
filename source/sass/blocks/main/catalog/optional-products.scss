@@ -1,0 +1,19 @@
+.optional-products__title {
+  @include fonts(24px, 24px);
+}
+
+.optional-products__cards {
+  padding: 0;
+  list-style: none;
+}
+
+.optional-products__card-name {
+  @include fonts(16px, 16px, $catalog-subtitle__fonts-color);
+  text-transform: uppercase;
+}
+
+.optional-products__amount,
+.optional-products__cost {
+  @include fonts(14px, 14px, $secondary__fonts-color);
+  font-family: "Lato", sans-serif;
+}

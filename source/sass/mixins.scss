@@ -1,0 +1,12 @@
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin fonts($font-size, $line-height, $color: $primary__fonts-color, $font-weight: 400) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-weight: $font-weight;
+}

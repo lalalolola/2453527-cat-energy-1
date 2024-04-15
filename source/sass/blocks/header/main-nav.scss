@@ -1,0 +1,41 @@
+.main-nav--closed {
+  display: none;
+}
+
+.main-nav--opened {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+//.main-nav--no-js {
+//  position: static;
+//}
+
+.main-nav__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-nav__item {
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-nav__item:first-child {
+  border-top: 1px solid #e6e6e6;
+}
+
+.main-nav__link {
+  @include fonts(20px, 20px);
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 22px 15px 23px;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}

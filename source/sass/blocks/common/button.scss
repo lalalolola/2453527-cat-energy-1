@@ -1,0 +1,13 @@
+.button {
+  @include fonts(16px, 20px, $special__fonts-color);
+  background-color: $base__background-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  font-family: "Oswald", sans-serif;
+}
+
+.button--show-more {
+  color: $secondary__fonts-color;
+  background-color: $optional__background-color;
+}

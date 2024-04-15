@@ -1,0 +1,7 @@
+.products__title {
+  @include fonts(36px, 36px);
+}
+
+.products__cards {
+  @include reset-list;
+}

@@ -1,0 +1,9 @@
+.address__title {
+  @include fonts(16px, 20px, $special-dark__fonts-color);
+}
+
+.address__description {
+  @include fonts(14px, 20px, $secondary__fonts-color);
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+}

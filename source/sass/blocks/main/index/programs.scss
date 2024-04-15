@@ -1,0 +1,72 @@
+.programs {
+  padding: 20px 0;
+}
+
+.programs__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.programs__item {
+  position: relative;
+  background-color: $optional__background-color;
+  padding: 30px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.programs__title {
+  @include fonts(24px, 37px);
+  margin: 0 0 29px 0;
+  text-transform: uppercase;
+  padding-left: 71px;
+}
+
+.programs__item:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  background-image: url("../../../../img/index/cat-slim.svg");
+  background-size: 100%;
+  top: 21px;
+  left: 20px;
+}
+
+.programs__item--to-build:before {
+  background-image: url("../../../../img/index/cat-pro.svg");
+  width: 67px;
+  height: 50px;
+  top: 24px;
+  left: 13px;
+}
+
+.programs__description {
+  margin: 0 0 42px 0;
+  color: $secondary__fonts-color;
+  font-family: "Lato", sans-serif;
+}
+
+.programs__link {
+  @include fonts(16px, 16px);
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #d9d9d9;
+    top: -21px;
+    right: 0;
+    left: 0;
+  }
+}

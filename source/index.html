@@ -2,51 +2,59 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="container">
-        <a class="main-header__logo logo-image" href="#">
-          <img src="img/header/logo-pic.svg" height="38" width="33" alt="Энергичный суперкот">
-        </a>
-        <a class="main-header__logo logo" href="">
-          <img src="img/logo%20text.svg" height="18" width="101" alt="Cat Energy">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
+        <div class="main-header__wrapper">
+          <a class="main-header__logo logo-image" href="#">
+            <img class="main-header__logo-image" src="img/header/logo-pic.svg" height="38" width="33" alt="Энергичный суперкот">
+          </a>
+          <a class="main-header__logo logo" href="">
+            <img src="img/logo%20text.svg" height="18" width="101" alt="Cat Energy">
+          </a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+            <span class="main-header__toggle-line"></span>
+            <span class="main-header__toggle-line"></span>
+            <span class="main-header__toggle-line"></span>
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </nav>
+        </div>
       </div>
+      <nav class="main-nav main-nav--no-js main-nav--closed">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main-container">
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Функциональное питание для котов</h1>
-          <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <img class="hero__cover" src="img/index/hero-image.png" width="280" height="270" alt="Фирменная баночка корма Cat Energy с курицей">
-          <a class="hero__button button" href="form.html">Подобрать программу</a>
+          <div class="hero__wrapper">
+            <h1 class="hero__title">Функциональное питание для котов</h1>
+            <p class="hero__slogan">Занялся собой? Займись котом!</p>
+            <img class="hero__cover" src="img/index/hero-image.png" width="280" height="270" alt="Фирменная баночка корма Cat Energy с курицей">
+            <a class="hero__button button" href="form.html">Подобрать программу</a>
+          </div>
         </div>
       </section>
       <section class="programs">
@@ -87,7 +95,9 @@
                 5 кг
               </dt>
               <dd class="result__number-description">
-                снижение веса
+                <p class="result__number-description-text">
+                  снижение веса
+                </p>
               </dd>
             </div>
             <div class="result__item">
@@ -95,14 +105,16 @@
                 60 дней
               </dt>
               <dd class="result__number-description">
-                затрачено времени
+                <p class="result__number-description-text">
+                  затрачено времени
+                </p>
               </dd>
             </div>
-            <div class="result__item result__item--lead">
-              <dt class="result__number result__number--lead">
+            <div class="result__item result__item--price">
+              <dt class="result__price-number">
                 15 000 руб.
               </dt>
-              <dd class="result__description result__description--lead">
+              <dd class="result__price-description">
                 Затраты на питание:
               </dd>
             </div>
@@ -176,5 +188,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

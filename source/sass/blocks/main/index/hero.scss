@@ -1,0 +1,49 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 27px;
+  background:
+    url("../../../../img/index/background-hero-desktop.jpg"),
+    linear-gradient(180deg, #63a63a 63%, transparent 63%);
+  background-repeat: no-repeat;
+  color: $primary__fonts-color;
+  background-position: top, top;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero__title {
+  @include fonts(36px, 36px);
+  color: $special__fonts-color;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+
+.hero__slogan {
+  @include fonts(14px, 14px);
+  text-transform: uppercase;
+  color: $special__fonts-color;
+  margin: 0 0 29px 0;
+}
+
+.hero__cover {
+  margin-bottom: 3px;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+
+  &:hover {
+    background-color: $base__background-hover-color;
+    transition: background-color 0.3s;
+  }
+}

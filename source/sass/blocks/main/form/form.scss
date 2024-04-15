@@ -1,0 +1,17 @@
+.form,
+.form__input::placeholder {
+  @include fonts(16px, 18px, $secondary__fonts-color);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.form__contacts-title {
+  @include fonts(24px, 26px);
+  text-transform: none;
+}
+
+.form__required {
+  @include fonts(14px, 16px);
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+}
