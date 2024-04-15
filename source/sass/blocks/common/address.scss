@@ -1,9 +1,34 @@
+address {
+  padding: 26px 0;
+}
+
+.address__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .address__title {
   @include fonts(16px, 20px, $special-dark__fonts-color);
+  text-transform: uppercase;
+  margin: 0 17px 0 0;
 }
 
 .address__description {
   @include fonts(14px, 20px, $secondary__fonts-color);
   font-style: normal;
   font-family: "Lato", sans-serif;
+}
+
+.address__map {
+  min-width: 320px;
+  height: 362px;
+  position: relative;
+}
+
+.address__map-image {
+  position: absolute;
+  left: 50%;
+  margin-left: -160px;
+  z-index: -1;
 }
