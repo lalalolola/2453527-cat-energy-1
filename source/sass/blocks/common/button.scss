@@ -5,9 +5,17 @@
   text-decoration: none;
   border: none;
   font-family: "Oswald", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 26px, $special__fonts-color);
+  }
 }
 
 .button--show-more {
   color: $secondary__fonts-color;
   background-color: $optional__background-color;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 26px, $secondary__fonts-color);
+  }
 }

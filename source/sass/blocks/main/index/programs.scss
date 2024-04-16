@@ -1,5 +1,9 @@
 .programs {
   padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .programs__list {
@@ -19,6 +23,14 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 57px 52px;
   }
 }
 
@@ -27,6 +39,12 @@
   margin: 0 0 29px 0;
   text-transform: uppercase;
   padding-left: 71px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(36px, 36px);
+    margin: 0 0 24px 1px;
+    padding: 0;
+  }
 }
 
 .programs__item:before {
@@ -38,6 +56,14 @@
   background-size: 100%;
   top: 21px;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    top: 81px;
+    right: 63px;
+    left: initial;
+  }
 }
 
 .programs__item--to-build:before {
@@ -46,16 +72,30 @@
   height: 50px;
   top: 24px;
   left: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    top: 91px;
+    right: 29px;
+    left: initial;
+  }
 }
 
 .programs__description {
   margin: 0 0 42px 0;
   color: $secondary__fonts-color;
   font-family: "Lato", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    color: $primary__fonts-color;
+    margin: 0 0 52px 0;
+  }
 }
 
 .programs__link {
   @include fonts(16px, 16px);
+  display: block;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -68,5 +108,13 @@
     top: -21px;
     right: 0;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 29.6px);
   }
 }

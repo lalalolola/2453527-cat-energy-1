@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   color: $primary__fonts-color;
   background-position: top, top;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    padding-top: 65px;
+  }
 }
 
 .hero__wrapper {
@@ -16,6 +21,11 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+    align-items: flex-start;
+  }
 }
 
 .hero__title {
@@ -23,6 +33,13 @@
   color: $special__fonts-color;
   margin: 0 0 25px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(60px, 60px);
+    margin: 0 0 40px 0;
+    text-align: left;
+    max-width: 75%;
+  }
 }
 
 .hero__slogan {
@@ -30,10 +47,24 @@
   text-transform: uppercase;
   color: $special__fonts-color;
   margin: 0 0 29px 0;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 20px);
+    margin: 0 0 50px 0;
+    max-width: 50%;
+  }
 }
 
 .hero__cover {
   margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    align-self: center;
+    margin: -83px 0 0 -90px;
+    position: relative;
+    z-index: -1;
+  }
 }
 
 .hero__button {
@@ -45,5 +76,10 @@
   &:hover {
     background-color: $base__background-hover-color;
     transition: background-color 0.3s;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 244px;
+    padding: 14px 26px;
   }
 }

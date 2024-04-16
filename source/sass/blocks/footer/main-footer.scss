@@ -39,10 +39,13 @@
 
 .main-footer__list {
   @include reset-list;
+  width: 100%;
   position: relative;
   align-self: center;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .main-footer__link {
@@ -50,10 +53,24 @@
   padding: 17px 12px 20px;
 }
 
+.main-footer__creator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .main-footer__creator-name {
   @include fonts(16px, 20px, $secondary__fonts-color);
   font-family: "Lato", sans-serif;
+  padding: 7px 7px 7px 0;
   text-decoration: none;
+}
+
+.main-footer__creator-logo {
+  display: block;
+  width: 37px;
+  height: 34px;
+  padding-left: 10px;
 }
 
 .main-footer__link,
