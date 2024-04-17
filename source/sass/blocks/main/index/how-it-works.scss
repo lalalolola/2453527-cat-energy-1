@@ -1,9 +1,17 @@
 .how-it-works {
   padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 47px;
+  }
 }
 
 .how-it-works__title {
   margin: 0 0 42px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 32px 0;
+  }
 }
 
 .how-it-works__list {
@@ -11,6 +19,13 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 37px 153px;
+    counter-reset: num;
+  }
 }
 
 .how-it-works__item {
@@ -19,6 +34,22 @@
   margin-bottom: 26px;
   position: relative;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding: 151px 0 0;
+    position: relative;
+    min-width: 245px;
+  }
+}
+
+.how-it-works__item::after {
+  @media (min-width: $tablet-width) {
+    @include fonts(280px, 280px, $optional__background-color);
+    position: absolute;
+    content: counter(num);
+    counter-increment: num;
+    font-family: "Oswald", sans-serif;
+  }
 }
 
 .how-it-works__item::before {
