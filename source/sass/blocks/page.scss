@@ -11,6 +11,6 @@
   font-family: "Oswald", sans-serif;
 
   @media (min-width: $tablet-width) {
-    @include fonts(16px, 24px)
+    @include fonts(16px, 24px);
   }
 }
