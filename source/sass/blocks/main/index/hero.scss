@@ -5,7 +5,7 @@
   padding-top: 27px;
   background:
     url("../../../../img/index/background-hero-desktop.jpg"),
-    linear-gradient(180deg, #63a63a 302px, transparent 302px);
+    linear-gradient(180deg, #63a63a 63%, transparent 63%);
   background-repeat: no-repeat;
   color: $primary__fonts-color;
   background-position: top, top;
@@ -33,6 +33,7 @@
   color: $special__fonts-color;
   margin: 0 0 25px 0;
   text-align: center;
+  min-height: 72px;
 
   @media (min-width: $tablet-width) {
     @include fonts(60px, 60px);
@@ -68,10 +69,7 @@
 }
 
 .hero__button {
-  display: inline-block;
-  padding: 10px;
   width: 100%;
-  text-align: center;
 
   &:hover {
     background-color: $base__background-hover-color;

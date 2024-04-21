@@ -1,33 +1,63 @@
-address {
-  padding: 26px 0;
+.address {
+  padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
 }
 
 .address__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    padding: 0 40px;
+  }
 }
 
 .address__title {
   @include fonts(16px, 20px, $special-dark__fonts-color);
   text-transform: uppercase;
   margin: 0 17px 0 0;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 26px, $special-dark__fonts-color);
+    max-width: 170px;
+  }
 }
 
 .address__description {
   @include fonts(14px, 20px, $secondary__fonts-color);
+  min-width: 140px;
   font-style: normal;
   font-family: "Lato", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(16px, 20px, $secondary__fonts-color);
+    text-align: end;
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80px;
+  }
 }
 
 .address__map {
-  min-width: 320px;
   height: 362px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .address__map-image {
   position: absolute;
+  top: 0;
   left: 50%;
   margin-left: -160px;
   z-index: -1;

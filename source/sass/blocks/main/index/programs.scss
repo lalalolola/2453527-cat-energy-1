@@ -16,7 +16,7 @@
 .programs__item {
   position: relative;
   background-color: $optional__background-color;
-  padding: 30px 20px 22px;
+  padding: 30px 20px 18px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 57px 52px;
+    padding: 77px 316px 53px 52px;
   }
 }
 
@@ -83,29 +83,17 @@
 }
 
 .programs__description {
-  margin: 0 0 42px 0;
+  position: relative;
+  margin: 0 0 38px 0;
   color: $secondary__fonts-color;
   font-family: "Lato", sans-serif;
-
-  @media (min-width: $tablet-width) {
-    color: $primary__fonts-color;
-    margin: 0 0 52px 0;
-  }
-}
-
-.programs__link {
-  @include fonts(16px, 16px);
-  display: block;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
 
   &::before {
     position: absolute;
     content: "";
     height: 1px;
     background-color: #d9d9d9;
-    top: -21px;
+    bottom: -23px;
     right: 0;
     left: 0;
 
@@ -115,6 +103,40 @@
   }
 
   @media (min-width: $tablet-width) {
+    color: $primary__fonts-color;
+    margin: 0 0 48px 0;
+  }
+}
+
+.programs__link {
+  @include fonts(16px, 16px);
+  display: block;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 4px 49px 4px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../../../img/index/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 50%;
+    margin-top: -5px;
+  }
+
+  &:hover::after {
+    right: -5px;
+    transition: right, 0.3s;
+  }
+
+  @media (min-width: $tablet-width) {
     @include fonts(20px, 29.6px);
+    padding-right: 60px;
   }
 }

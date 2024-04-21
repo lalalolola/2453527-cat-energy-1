@@ -1,1 +1,15 @@
-//kdflsk
+.control {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 14px;
+  align-items: center;
+}
+
+.control__input {
+  @include fonts(16px, 18px, $secondary__fonts-color);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  min-height: 45px;
+  padding: 13px 14px 12px;
+}

@@ -1,3 +1,14 @@
+.forms__wrapper {
+  padding-top: 27px;
+}
+
 .forms__title {
   @include fonts(36px, 36px);
+  margin: 0 0 37px;
+}
+
+.forms__description {
+  text-transform: uppercase;
+  margin: 0 0 39px;
+  max-width: 240px;
 }

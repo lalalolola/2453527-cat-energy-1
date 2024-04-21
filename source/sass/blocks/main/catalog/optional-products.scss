@@ -1,19 +1,64 @@
+.optional-products {
+  padding-top: 25px;
+}
+
 .optional-products__title {
   @include fonts(24px, 24px);
+  margin: 0 0 35px;
 }
 
 .optional-products__cards {
-  padding: 0;
-  list-style: none;
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.optional-products__card {
+  padding: 13px 0 19px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.optional-products__card:first-child::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 1px;
+  background-color: #cdcdcd;
+}
+
+.optional-products__card::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #cdcdcd;
 }
 
 .optional-products__card-name {
   @include fonts(16px, 16px, $catalog-subtitle__fonts-color);
   text-transform: uppercase;
+  margin: 0 0 13px;
+
 }
 
-.optional-products__amount,
 .optional-products__cost {
   @include fonts(14px, 14px, $secondary__fonts-color);
   font-family: "Lato", sans-serif;
+  margin: 0 0 15px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.optional-products__price {
+  margin: 0;
+}
+
+

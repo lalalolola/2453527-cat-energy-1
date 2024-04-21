@@ -1,7 +1,14 @@
+.products__wrapper {
+  padding-top: 27px;
+}
+
 .products__title {
   @include fonts(36px, 36px);
+  margin: 0 0 41px;
 }
 
 .products__cards {
   @include reset-list;
+  display: grid;
+  grid-template-columns: 1fr;
 }

@@ -31,14 +31,17 @@
   display: grid;
   margin: 0 0 20px 0;
   grid-template-columns: 1fr 1fr;
-  column-gap: 32px;
+  gap: 20px 32px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 2fr;
+    margin: 0 0 99px 0;
+    gap: 20px 43px;
   }
 }
 
 .result__item {
+  display: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +49,7 @@
 
 .result__number {
   @include fonts(24px, 24px);
-  padding: 14.5px 0 15px;
+  padding: 14.5px 10px 15px;
   text-align: center;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
@@ -56,6 +59,9 @@
 
   @media (min-width: $tablet-width) {
     @include fonts(30px, 37px);
+    min-width: 162px;
+    min-height: 72px;
+    padding: 15px 10px;
   }
 }
 
@@ -63,13 +69,17 @@
   @include fonts(12px, 12px, $secondary__fonts-color);
   font-family: "Lato", sans-serif;
   max-width: 87px;
-  min-width: 87px;
   text-align: center;
-  margin: -9px 0 20px;
+  padding: 0 14px;
+  margin: -9px 0 0 0;
   background-color: $optional__background-color;
 
   @media (min-width: $tablet-width) {
     @include fonts(14px, 14px, $secondary__fonts-color);
+    max-width: 145px;
+    padding: 0 10px;
+    margin: -9px 0 0 0;
+    background-color: $special__fonts-color;
   }
 }
 
@@ -78,6 +88,10 @@
   max-width: 77px;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 145px;
+  }
 }
 
 .result__item--price {
@@ -86,11 +100,13 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    grid-column: -1;
+    width: 100%;
+    grid-column: -1 / -2;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    text-align: end;
   }
 }
 
