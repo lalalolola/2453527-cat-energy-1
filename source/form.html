@@ -69,11 +69,11 @@
             </label>
             <label class="form__label control">
               <span class="control__label">Вес (кг):*</span>
-              <input class="form__input control__input" type="text" name="cat-weight" placeholder="7" required>
+              <input class="form__input control__input" type="number" min="0" name="cat-weight" placeholder="7" required>
             </label>
             <label class="form__label control">
               <span class="control__label">Возраст (лет):</span>
-              <input class="form__input control__input" type="text" name="cat-age" placeholder="7">
+              <input class="form__input control__input" type="number" min="0" name="cat-age" placeholder="7">
             </label>
           </section>
           <section class="form__programs container">
@@ -105,14 +105,16 @@
           <section class="form__contacts">
             <div class="container">
               <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
-              <label class="form__label control">
-                <span class="control__label">E-mail:*</span>
-                <input class="form__input control__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-              </label>
-              <label class="form__label control">
-                <span class="control__label">Телефон:*</span>
-                <input class="form__input control__input" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
-              </label>
+              <div class="form__contacts-wrapper">
+                <label class="form__label control">
+                  <span class="control__label">E-mail:*</span>
+                  <input class="form__input control__input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+                </label>
+                <label class="form__label control">
+                  <span class="control__label">Телефон:*</span>
+                  <input class="form__input control__input" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
+                </label>
+              </div>
             </div>
           </section>
           <section class="form__comment">

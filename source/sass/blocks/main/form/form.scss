@@ -5,9 +5,18 @@
   text-transform: uppercase;
 }
 
+.form__contacts {
+  padding: 26px 0 24px;
+}
+
+.form__comment {
+  padding-bottom: 23px;
+}
+
 .form__contacts-title {
   @include fonts(24px, 26px);
   text-transform: none;
+  margin: 0 0 35px;
 }
 
 .form__required {
@@ -16,7 +25,8 @@
   text-transform: none;
 }
 
-.form__introduction {
+.form__introduction,
+.form__contacts-wrapper {
   display: grid;
   row-gap: 14px;
 }
