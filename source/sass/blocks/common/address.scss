@@ -1,9 +1,14 @@
 .address {
   padding-top: 26px;
+  background-color: $optional__background-color;
 
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }
+}
+
+.address--index {
+  background-color: initial;
 }
 
 .address__wrapper {

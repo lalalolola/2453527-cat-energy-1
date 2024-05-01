@@ -1,3 +1,13 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 75%;
+  }
+}
+
 .main-nav--closed {
   display: none;
 
@@ -58,9 +68,15 @@
     position: absolute;
     right: 4px;
     left: 29px;
-    bottom: 2px;
+    bottom: 4px;
     height: 2px;
     background-color: $base__background-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -2px;
+    left: 34px;
+    bottom: 5px;
   }
 }
 
@@ -77,5 +93,11 @@
     @include fonts(18px, 24px);
     margin-left: 25px;
     padding: 14px 4px 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include fonts(20px, 30px);
+    margin-left: 23px;
+    padding: 12px 0 12px 12px;
   }
 }

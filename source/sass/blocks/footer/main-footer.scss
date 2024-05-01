@@ -1,5 +1,6 @@
 .main-footer {
   padding: 20px 0 40px;
+  background-color: $optional__background-color;
 
   @media (min-width: $tablet-width) {
     padding: 55px 0 55px;
@@ -105,7 +106,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding: 8.5px 13px 8.5px 5px ;
+    padding: 8.5px 13px 8.5px 5px;
   }
 }
 
