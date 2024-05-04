@@ -7,6 +7,7 @@
 @import "base/base";
 
 //Блоки компонентов
+@import "blocks/common/button";
 @import "blocks/page";
 @import "blocks/common/container";
 @import "blocks/header/main-header";
@@ -16,7 +17,6 @@
 @import "blocks/main/index/main-container";
 @import "blocks/main/index/section-title";
 @import "blocks/main/index/hero";
-@import "blocks/common/button";
 @import "blocks/main/index/programs";
 @import "blocks/main/index/how-it-works";
 @import "blocks/main/index/result";

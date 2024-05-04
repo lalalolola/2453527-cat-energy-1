@@ -23,6 +23,7 @@
   padding: 187px 50px 43px;
   display: flex;
   position: relative;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 71px 125px 69px 421px;
@@ -32,6 +33,7 @@
   @media (min-width: $desktop-width) {
     padding: 185px 42px 43px;
     background-image: url("../../../../img/catalog/promo-image-desktop.jpg");
+
   }
 }
 

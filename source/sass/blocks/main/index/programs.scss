@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 0 26px;
+  }
 }
 
 .programs__list {
@@ -11,6 +15,12 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .programs__item {
@@ -27,10 +37,19 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 30px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 61px 55px 52px;
+    margin: 0;
   }
 }
 
@@ -44,6 +63,11 @@
     @include fonts(36px, 36px);
     margin: 0 0 24px 1px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 0;
+    padding-left: 162px;
   }
 }
 
@@ -64,6 +88,14 @@
     right: 63px;
     left: initial;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    top: 41px;
+    right: initial;
+    left: 52px;
+  }
 }
 
 .programs__item--to-build::before {
@@ -79,6 +111,14 @@
     top: 91px;
     right: 29px;
     left: initial;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    top: 47px;
+    right: initial;
+    left: 35px;
   }
 }
 
@@ -105,6 +145,10 @@
   @media (min-width: $tablet-width) {
     color: $primary__fonts-color;
     margin: 0 0 48px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 23px 0;
   }
 }
 

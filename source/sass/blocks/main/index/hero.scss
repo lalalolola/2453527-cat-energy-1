@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   padding-top: 27px;
   background:
-    url("../../../../img/index/background-hero-desktop.jpg"),
+    url("../../../../img/index/background-hero.jpg"),
     linear-gradient(180deg, #63a63a 63%, transparent 63%);
   background-repeat: no-repeat;
   color: $primary__fonts-color;
@@ -13,6 +13,17 @@
   @media (min-width: $tablet-width) {
     background: none;
     padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background:
+      url("../../../../img/index/background-hero-desktop.jpg"),
+      linear-gradient(270deg, #63a63a 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: right -90px top;;
+    padding-top: 224px;
+    padding-bottom: 184px;
+    display: block;
   }
 }
 
@@ -25,6 +36,12 @@
   @media (min-width: $tablet-width) {
     margin-left: 90px;
     align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    position: relative;
+    max-width: 570px;
   }
 }
 
@@ -51,8 +68,12 @@
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 20px);
-    margin: 0 0 50px 0;
+    margin-bottom: 50px;
     max-width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px
   }
 }
 
@@ -66,6 +87,12 @@
     position: relative;
     z-index: -1;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 80%;
+    z-index: 1;
+  }
 }
 
 .hero__button {
@@ -77,6 +104,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 244px;
+    padding: 14px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
     max-width: 244px;
     padding: 14px 26px;
   }

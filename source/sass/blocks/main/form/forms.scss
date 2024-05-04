@@ -2,7 +2,11 @@
   padding: 27px 0 32px;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 40px 60px;
+    padding: 65px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0 79px;
   }
 }
 
@@ -25,5 +29,9 @@
     @include fonts(20px, 30px);
     margin-bottom: 1px;
     max-width: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 67px;
   }
 }

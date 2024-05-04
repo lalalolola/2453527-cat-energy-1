@@ -1,4 +1,10 @@
 .product-card {
+  @media (min-width: $tablet-width) {
+    padding-top: 81px;
+  }
+}
+
+.product-card__wrapper {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -7,7 +13,6 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    margin-top: 81px;
     padding: 0 37px 40px;
     row-gap: initial;
     background-color: $optional__background-color;
@@ -146,7 +151,7 @@
   }
 }
 
-.product-card--show-more {
+.product-card__wrapper--show-more {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -159,6 +164,7 @@
     padding: 160px 35px 38px;
     background-color: transparent;
     border: 2px solid $optional__background-color;
+    height: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -166,7 +172,7 @@
   }
 }
 
-.product-card--show-more::before {
+.product-card__wrapper--show-more::before {
   content: "";
   position: absolute;
   top: 25px;

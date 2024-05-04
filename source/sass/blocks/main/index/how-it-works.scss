@@ -5,6 +5,10 @@
     position: relative;
     padding: 45px 0 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 24px;
+  }
 }
 
 .how-it-works::after {
@@ -16,6 +20,10 @@
     left: 0;
     height: 1px;
     background-color: #e6e6e6ff;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -38,6 +46,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 37px 60px;
     counter-reset: num;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 

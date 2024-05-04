@@ -7,6 +7,11 @@
     background-image: linear-gradient(0deg, $optional__background-color 462px, transparent 462px);
     padding: 45px 0 101px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-bottom: 75px;
+  }
 }
 
 .result__title {
@@ -14,6 +19,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 146px 0;
   }
 }
 
@@ -25,18 +34,32 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 55px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    margin: 0 0 69px 0;
+  }
 }
 
 .result__list {
   display: grid;
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px;
   grid-template-columns: 1fr 1fr;
   gap: 20px 32px;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 162px 162px 1fr;
     margin: 0 0 99px 0;
     gap: 20px 43px;
+    max-width: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 366px;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px 43px;
+    margin: 0;
   }
 }
 
@@ -80,6 +103,10 @@
     margin: -9px 0 0 0;
     background-color: $special__fonts-color;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $optional__background-color;
+  }
 }
 
 .result__number-description-text {
@@ -107,6 +134,12 @@
     justify-content: center;
     text-align: end;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: flex-start
+  }
 }
 
 .result__price-number,
@@ -119,12 +152,20 @@
   @media (min-width: $tablet-width) {
     @include fonts(20px, 20px);
   }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+  }
 }
 
 .result__price-description {
   @media (min-width: $tablet-width) {
     @include fonts(20px, 20px);
     margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 63px 0 0;
   }
 }
 
@@ -138,6 +179,12 @@
 
   @media (min-width: $tablet-width) {
     max-width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 340px;
+    top: 45px;
   }
 }
 

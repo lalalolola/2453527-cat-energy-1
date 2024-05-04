@@ -5,6 +5,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 0;
+  }
 }
 
 .address--index {
@@ -20,6 +25,14 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
     padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    z-index: 1;
+    background-color: $special__fonts-color;
+    padding: 60px 74px 60px 80px ;
   }
 }
 
@@ -48,6 +61,11 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 65px;
+    text-align: start;
   }
 }
 

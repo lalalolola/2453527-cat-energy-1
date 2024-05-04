@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header main-header--index-desktop">
       <div class="container">
         <div class="main-header__wrapper main-header--index-desktop">
           <div class="main-header__logo-wrapper">
@@ -35,18 +35,18 @@
           </div>
           <nav class="main-nav main-nav--no-js main-nav--closed">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
-                <a class="main-nav__link" href="#">
+              <li class="main-nav__item main-nav__item--current main-nav__item--current-index-desktop">
+                <a class="main-nav__link main-nav__link--index-desktop" href="#">
                   Главная
                 </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">
+                <a class="main-nav__link main-nav__link--index-desktop" href="catalog.html">
                   Каталог продукции
                 </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">
+                <a class="main-nav__link main-nav__link--index-desktop" href="form.html">
                   Подбор программы
                 </a>
               </li>
@@ -62,6 +62,7 @@
             <h1 class="hero__title">Функциональное питание для котов</h1>
             <p class="hero__slogan">Занялся собой? Займись котом!</p>
             <picture class="hero__cover">
+              <source srcset="img/index/hero-image-desktop.png" width="552" height="499" media="(min-width: 1300px)">
               <source srcset="img/index/hero-image-tablet.png" width="709" height="609" media="(min-width: 768px)">
               <img src="img/index/hero-image.png" width="280" height="270" alt="Фирменная баночка корма Cat Energy с курицей">
             </picture>
@@ -100,7 +101,7 @@
       <section class="result">
         <div class="container">
           <h2 class="result__title section-title">Живой пример</h2>
-          <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <p class="result__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <dl class="result__list">
             <div class="result__item">
               <dt class="result__number">
@@ -173,7 +174,7 @@
         <div class="main-footer__wrapper">
           <p class="main-footer__logo-wrapper">
             <a class="main-footer__logo logo" href="#">
-              <img class="main-footer__logo-image" src="img/logo%20text.svg" alt="Cat Energy">
+              <img class="main-footer__logo-image" src="img/logo-text.svg" height="24" width="128" alt="Cat Energy">
             </a>
           </p>
           <ul class="main-footer__list">
