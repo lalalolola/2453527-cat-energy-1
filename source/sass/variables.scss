@@ -1,9 +1,17 @@
-$base-background-color: #68b738ff;
-$base-background-hover-color: #5eaa2f;
-$optional-background-color: #f2f2f2;
-$primary-fonts-color: #000000;
-$secondary-fonts-color: #444444;
-$catalog-subtitle-fonts-color: #222222;
-$special-dark-fonts-color: #111111;
-$special-fonts-color: #ffffff;
-$error-color-color: #ff8282;
+//fonts-colors
+$primary__fonts-color: #000000;
+$secondary__fonts-color: #444444;
+$catalog-subtitle__fonts-color: #222222;
+$special-dark__fonts-color: #111111;
+$special__fonts-color: #ffffff;
+$error__fonts-color: #ff8282;
+
+//background-colors
+$base__background-color: #68b738;
+$base__background-hover-color: #5eaa2f;
+$optional__background-color: #f2f2f2;
+
+//viewports
+$tablet-width: 768px;
+$desktop-width: 1300px;
+$mobile-width: 320px;

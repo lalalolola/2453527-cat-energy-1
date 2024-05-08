@@ -1,0 +1,206 @@
+.optional-products {
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+    padding-bottom: 87px;
+  }
+}
+
+.optional-products__title {
+  @include fonts(24px, 24px);
+  --gap: 20px;
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  padding: 0 var(--gap);
+  margin: 0 calc(-1 * var(--gap));
+  width: fit-content;
+  max-width: 300px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(36px, 36px);
+    --gap: 40px;
+    margin: 0 0 80px;
+    max-width: 450px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 calc(-1 * var(--gap));
+  }
+}
+
+.optional-products__cards {
+  @include reset-list;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    min-width: 894px;
+    max-width: 894px;
+  }
+}
+
+.optional-products__card {
+  padding: 13px 0 19px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 37px 28px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 17px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+.optional-products__card:first-child::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 1px;
+  background-color: #cdcdcd;
+}
+
+.optional-products__card::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #cdcdcd;
+
+  @media (min-width: $desktop-width) {
+    bottom: -1px;
+  }
+}
+
+.optional-products__card-name {
+  @include fonts(16px, 16px, $catalog-subtitle__fonts-color);
+  text-transform: uppercase;
+  margin: 0 0 13px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 20px, $catalog-subtitle__fonts-color);
+    margin: 0 0 24px;
+    max-width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 0 0;
+    max-width: 300px;
+  }
+}
+
+.optional-products__cost {
+  @include fonts(14px, 14px, $secondary__fonts-color);
+  font-family: "Lato", sans-serif;
+  margin: 0 0 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(16px, 20px, $secondary__fonts-color);
+    max-width: 50%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 285px;
+    max-width: 285px;
+    margin-right: 40px;
+  }
+}
+
+.optional-products__amount {
+  @media (min-width: $desktop-width) {
+    max-width: 200px;
+  }
+}
+
+.optional-products__price {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    text-align: start;
+    min-width: 42px;
+    max-width: 60px;
+  }
+}
+
+.optional-products__title-decoration {
+  position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 79px;
+  }
+}
+
+.optional-products__title-decoration::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  top: 15px;
+  background-color: $base__background-color;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
+  }
+}
+
+.optional-products__button {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 244px;
+  }
+}
+
+.optional-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

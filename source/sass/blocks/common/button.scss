@@ -1,0 +1,30 @@
+.button {
+  @include fonts(16px, 20px, $special__fonts-color);
+  display: inline-block;
+  background-color: $base__background-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  padding: 10px;
+
+  &:hover {
+    background-color: $base__background-hover-color;
+    transition: background-color 0.3s;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 26px, $special__fonts-color);
+  }
+}
+
+.button--show-more {
+  color: $secondary__fonts-color;
+  background-color: $optional__background-color;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 26px, $secondary__fonts-color);
+  }
+}

@@ -1,0 +1,37 @@
+.forms {
+  padding: 27px 0 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0 79px;
+  }
+}
+
+.forms__title {
+  @include fonts(36px, 36px);
+  margin: 0 0 37px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(60px, 60px);
+    margin-bottom: 54px;
+  }
+}
+
+.forms__description {
+  text-transform: uppercase;
+  margin: 0 0 15px;
+  max-width: 240px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(20px, 30px);
+    margin-bottom: 1px;
+    max-width: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 67px;
+  }
+}
