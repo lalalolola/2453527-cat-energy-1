@@ -14,6 +14,14 @@
   }
 }
 
+.result__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 .result__title {
   margin: 0 0 40px 0;
 
@@ -23,6 +31,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 146px 0;
+    max-width: 50%;
   }
 }
 
@@ -182,9 +191,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    right: 340px;
-    top: 45px;
+    margin: -205px 0 0 20px;
   }
 }
 
@@ -220,6 +227,10 @@
   top: 50%;
   left: var(--pos);
   z-index: 3;
+
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 .divider-line {
