@@ -1,6 +1,6 @@
 
 const slider = document.querySelector('.result__photos');
-const buttonDividerResult = document.querySelector('.divider');
+const buttonDividerResult = document.querySelector('.result__divider-button');
 
 let isActive = false;
 
