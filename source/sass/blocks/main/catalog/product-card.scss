@@ -23,7 +23,7 @@
   }
 }
 
-.product-card:first-child::before {
+.product-card:first-child .product-card__wrapper::before {
   position: absolute;
   content: "";
   right: 0;
@@ -38,7 +38,7 @@
   }
 }
 
-.product-card::after {
+.product-card__wrapper::after {
   position: absolute;
   content: "";
   right: 0;

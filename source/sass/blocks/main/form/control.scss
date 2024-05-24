@@ -3,6 +3,21 @@
   grid-template-columns: auto 1fr;
   column-gap: 14px;
   align-items: center;
+  cursor: pointer;
+
+  &:hover .control__mark {
+    border-color: #bababa;
+  }
+
+  &:active .control__mark {
+    border-color: #bababa;
+  }
+
+  &:active .control__mark,
+  &:active .control__mark + .control__label {
+    border-color: #bababa;
+    opacity: 0.3;
+  }
 }
 
 .form__programs .control {
@@ -20,6 +35,28 @@
   padding: 13px 14px 12px;
   //-webkit-appearance: textfield;
   appearance: textfield;
+
+  &:focus + .control__input-icon path {
+    stroke: #68b738;
+  }
+
+  &--error + .control__input-icon path {
+    stroke: #ff8282;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid $secondary__fonts-color;
+    outline: 1px solid $secondary__fonts-color;
+  }
+
+  &--error {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+  }
 
   @media (min-width: $tablet-width) {
     @include fonts(20px, 30px, $secondary__fonts-color);

@@ -164,19 +164,25 @@
   &::after {
     content: "";
     position: absolute;
-    width: 32px;
+    width: 24px;
     height: 10px;
     background-image: url("../../../../img/index/arrow.svg");
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    right: 0;
+    right: 8px;
     top: 50%;
     margin-top: -5px;
   }
 
   &:hover::after {
-    right: -5px;
-    transition: right, 0.3s;
+    width: 32px;
+    right: 0;
+    transition: width, 0.2s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.2s;
   }
 
   @media (min-width: $tablet-width) {

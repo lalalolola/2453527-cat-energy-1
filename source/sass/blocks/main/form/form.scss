@@ -25,19 +25,14 @@
   padding-right: 40px;
 }
 
-.form__contacts-wrapper .form__label::after {
+.control__input-icon {
   position: absolute;
   content: "";
-  background-image: url("../../../../img/form/email-input.svg");
   width: 20px;
   height: 20px;
-  right: 12px;
+  right: 16px;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.form__contacts-wrapper .form__label--phone::after {
-  background-image: url("../../../../img/form/phone-input.svg");
 }
 
 .form__title {
@@ -169,8 +164,8 @@
 .form__programs::after {
   position: absolute;
   content: "";
-  right: 0;
-  left: 0;
+  right: -20px;
+  left: -20px;
   bottom: 0;
   height: 1px;
   background-color: #d9d9d9;
