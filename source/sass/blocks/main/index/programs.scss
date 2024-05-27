@@ -160,6 +160,7 @@
   text-transform: uppercase;
   width: fit-content;
   padding: 4px 49px 4px 0;
+  transition: opacity 0.2s;
 
   &::after {
     content: "";
@@ -169,20 +170,18 @@
     background-image: url("../../../../img/index/arrow.svg");
     background-position: right;
     background-repeat: no-repeat;
-    right: 8px;
+    left: calc(100% - 32px);
     top: 50%;
     margin-top: -5px;
+    transition: width 0.2s ease;
   }
 
   &:hover::after {
     width: 32px;
-    right: 0;
-    transition: width, 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: opacity 0.2s;
   }
 
   @media (min-width: $tablet-width) {

@@ -4,11 +4,20 @@
   flex-wrap: wrap;
   padding-top: 27px;
   background:
-    url("../../../../img/index/background-hero.jpg"),
+    url("../../../../img/index/background-hero@1x.jpg"),
     linear-gradient(180deg, #63a63a 63%, transparent 63%);
   background-repeat: no-repeat;
   color: $primary__fonts-color;
   background-position: top, top;
+
+  @media (min-resolution: 2dppx) {
+    background:
+      url("../../../../img/index/background-hero@2x.jpg"),
+      linear-gradient(180deg, #63a63a 63%, transparent 63%);
+    background-repeat: no-repeat;
+    background-position: top, top;
+    background-size: 320px auto, auto;
+  }
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -17,13 +26,18 @@
 
   @media (min-width: $desktop-width) {
     background:
-      url("../../../../img/index/background-hero-desktop.jpg"),
+      url("../../../../img/index/background-hero-desktop@1x.jpg"),
       linear-gradient(270deg, #63a63a 50%, transparent 50%);
     background-repeat: no-repeat;
     background-position: left calc(50% + 521px) bottom, center;
     padding-top: 224px;
     padding-bottom: 184px;
     display: block;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../../img/index/background-hero-desktop@2x.jpg");
+      background-size: 1041px auto;
+    }
   }
 }
 
@@ -97,11 +111,6 @@
 
 .hero__button {
   width: 100%;
-
-  &:hover {
-    background-color: $base__background-hover-color;
-    transition: background-color 0.3s;
-  }
 
   @media (min-width: $tablet-width) {
     max-width: 244px;

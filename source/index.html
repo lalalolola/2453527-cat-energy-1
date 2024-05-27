@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header main-header--decoration-none main-header--index-desktop">
@@ -13,14 +17,15 @@
           <div class="main-header__logo-wrapper">
             <a class="main-header__logo" href="index.html">
               <picture>
-                <source srcset="img/header/logo-pic-desktop.png" width="70" height="59" media="(min-width: 1300px)">
-                <source srcset="img/header/logo-pic-tablet.png" width="60" height="50" media="(min-width: 768px)">
+                <source srcset="img/header/logo-pic-desktop.svg" width="70" height="59" media="(min-width: 1300px)">
+                <source srcset="img/header/logo-pic-tablet.svg" width="60" height="50" media="(min-width: 768px)">
                 <img class="main-header__logo-image" src="img/header/logo-pic.svg" height="38" width="33" alt="Энергичный суперкот">
               </picture>
             </a>
             <a class="main-header__logo-text" href="index.html">
               <picture>
                 <source srcset="img/logo-text-desktop.svg" width="118" height="21" media="(min-width: 1300px)">
+                <source srcset="img/logo-text-desktop.svg" width="101" height="18" media="(min-width: 768px)">
                 <img class="main-header__logo-image" src="img/logo-text.svg" height="18" width="101" alt="Cat Energy">
               </picture>
             </a>
@@ -55,17 +60,19 @@
         </div>
       </div>
     </header>
-    <main class="main-container">
+    <main>
       <section class="hero">
         <div class="container">
           <div class="hero__wrapper">
             <h1 class="hero__title">Функциональное питание для котов</h1>
             <p class="hero__slogan">Занялся собой? Займись котом!</p>
-            <picture class="hero__cover">
-              <source srcset="img/index/hero-image-desktop.png" width="552" height="499" media="(min-width: 1300px)">
-              <source srcset="img/index/hero-image-tablet.png" width="709" height="609" media="(min-width: 768px)">
-              <img src="img/index/hero-image.png" width="280" height="270" alt="Фирменная баночка корма Cat Energy с курицей">
-            </picture>
+            <div class="hero__cover">
+              <picture>
+                <source srcset="img/index/hero-image-desktop@1x.png 1x, img/index/hero-image-desktop@2x.png 2x" width="552" height="499" media="(min-width: 1300px)">
+                <source srcset="img/index/hero-image-tablet@1x.png 1x, img/index/hero-image-tablet@2x.png 2x" width="709" height="609" media="(min-width: 768px)">
+                <img src="img/index/hero-image@1x.png" srcset="img/index/hero-image@2x.png 2x" width="280" height="270" alt="Фирменная баночка корма Cat Energy с курицей">
+              </picture>
+            </div>
             <a class="hero__button button" href="form.html">Подобрать программу</a>
           </div>
         </div>
@@ -148,14 +155,18 @@
                   </svg>
                 </button>
               </div>
-              <picture class="result__image result__image-before">
-                <source srcset="img/index/cat-before-desktop.png" width="560" height="512" media="(min-width: 768px)">
-                <img src="img/index/cat-before-mobile.png" width="280" height="256" alt="Кот Борис до программы питания кормом Cat Energy Slim">
-              </picture>
-              <picture class="result__image result__image-after">
-                <source srcset="img/index/cat-after-desktop.png" width="560" height="512" media="(min-width: 768px)">
-                <img class="result__image-after-img" src="img/index/cat-after-mobile.png" width="280" height="256" alt="Кот Борис после программы питания кормом Cat Energy Slim">
-              </picture>
+              <div class="result__image result__image-before">
+                <picture>
+                  <source srcset="img/index/cat-before-desktop@1x.png 1x, img/index/cat-before-desktop@2x.png 2x" width="560" height="512" media="(min-width: 768px)">
+                  <img src="img/index/cat-before-mobile@1x.png" srcset="img/index/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис до программы питания кормом Cat Energy Slim">
+                </picture>
+              </div>
+              <div class="result__image result__image-after">
+                <picture>
+                  <source srcset="img/index/cat-after-desktop@1x.png 1x, img/index/cat-after-desktop@2x.png 2x" width="560" height="512" media="(min-width: 768px)">
+                  <img class="result__image-after-img" src="img/index/cat-after-mobile@1x.png" srcset="img/index/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после программы питания кормом Cat Energy Slim">
+                </picture>
+              </div>
             </div>
           </div>
         </div>

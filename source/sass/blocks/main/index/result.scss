@@ -218,26 +218,29 @@
 .result__divider {
   cursor: pointer;
 
-  &:hover .result__divider-button {
-    color: $base__background-color;
+  & .result__divider-button {
     transition: color 0.2s;
     background-color: transparent;
+  }
+
+  & .result__divider-line {
+    transition: background-color 0.2s;
+  }
+
+  &:hover .result__divider-button {
+    color: $base__background-color;
   }
 
   &:hover .result__divider-line {
     background-color: $base__background-color;
-    transition: background-color 0.2s;
   }
 
   &:active .result__divider-button {
     color: $base__background-hover-color;
-    transition: color 0.2s;
-    background-color: transparent;
   }
 
   &:active .result__divider-line {
     background-color: $base__background-hover-color;
-    transition: background-color 0.2s;
   }
 }
 
