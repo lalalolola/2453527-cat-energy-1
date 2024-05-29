@@ -53,15 +53,15 @@
   align-self: center;
   padding: 20px;
   position: relative;
+  transition: opacity 0.2s;
+
 
   &:hover {
     opacity: 0.8;
-    transition: opacity 0.2s;
   }
 
   &:active {
     opacity: 0.6;
-    transition: opacity 0.2s;
   }
 
   @media (min-width: $tablet-width) {
@@ -95,16 +95,16 @@
 .main-footer__link {
   display: inline-block;
   padding: 17px 12px 20px;
+  transition: color 0.2s, opacity 0.2s;
+
 
   &:hover {
     color: $base__background-color;
-    transition: color 0.2s;
   }
 
   &:active {
     color: $base__background-color;
     opacity: 0.3;
-    transition: opacity 0.2s, color 0.2s;
   }
 
   @media (min-width: $tablet-width) {
@@ -117,15 +117,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: opacity 0.2s;
+
+  & .main-footer__creator-logo {
+    transition: color 0.2s;
+  }
 
   &:hover .main-footer__creator-logo {
     color: $base__background-color;
-    transition: color 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: opacity 0.2s;
   }
 
   @media (min-width: $tablet-width) {

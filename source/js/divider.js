@@ -1,5 +1,6 @@
 
 const slider = document.querySelector('.result__photos');
+const section = document.querySelector('.result')
 const buttonDividerResult = document.querySelector('.result__divider-button');
 
 let isActive = false;
@@ -15,19 +16,19 @@ const pauseEvents = (e) => {
   return false;
 };
 
-document.body.addEventListener('mousedown', () => {
+section.addEventListener('mousedown', () => {
   isActive = true;
 });
 
-document.body.addEventListener('mouseup', () => {
+section.addEventListener('mouseup', () => {
   isActive = false;
 });
 
-document.body.addEventListener('mouseleave', () => {
+section.addEventListener('mouseleave', () => {
   isActive = false;
 });
 
-document.body.addEventListener('mousemove', (e) => {
+section.addEventListener('mousemove', (e) => {
   if (!isActive) {
     return;
   }
@@ -43,15 +44,15 @@ buttonDividerResult.addEventListener('touchstart', () => {
   isActive = true;
 });
 
-document.body.addEventListener('touchend', () => {
+section.addEventListener('touchend', () => {
   isActive = false;
 });
 
-document.body.addEventListener('touchcancel', () => {
+section.addEventListener('touchcancel', () => {
   isActive = false;
 });
 
-document.body.addEventListener('touchmove', (e) => {
+section.addEventListener('touchmove', (e) => {
   if (!isActive) {
     return;
   }

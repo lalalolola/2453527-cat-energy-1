@@ -9,16 +9,15 @@
   font-family: "Oswald", sans-serif;
   cursor: pointer;
   padding: 10px;
+  transition: background-color 0.2s, color 0.2s;
 
   &:hover {
     background-color: $base__background-hover-color;
-    transition: background-color 0.2s;
   }
 
   &:active {
     background-color: $base__background-hover-color;
     color: rgba(255, 255, 255, 0.3);
-    transition: background-color 0.2s, color 0.2s;
   }
 
   @media (min-width: $tablet-width) {
@@ -37,7 +36,6 @@
   &:active {
     background-color: $optional__background-hover-color;
     color: $secondary__fonts-color;
-    transition: background-color 0.2s;
   }
 
   @media (min-width: $tablet-width) {

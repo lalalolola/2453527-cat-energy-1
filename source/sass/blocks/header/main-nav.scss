@@ -79,6 +79,7 @@
     bottom: 4px;
     height: 2px;
     background-color: $base__background-color;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,15 +103,14 @@
   display: block;
   text-transform: uppercase;
   text-decoration: none;
+  transition: opacity 0.2s;
 
   &:hover {
     opacity: 0.6;
-    transition: opacity 0.2s;
   }
 
   &:active {
     opacity: 0.3;
-    transition: opacity 0.2s;
   }
 
   @media (min-width: $tablet-width) {
