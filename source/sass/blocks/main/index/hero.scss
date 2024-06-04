@@ -10,6 +10,19 @@
   color: $primary__fonts-color;
   background-position: top, top;
 
+  @supports (background: url("../../../../img/index/background-hero@1x.webp")) {
+    background:
+      url("../../../../img/index/background-hero@1x.webp"),
+      linear-gradient(180deg, #63a63a 63%, transparent 63%);
+    background-repeat: no-repeat;
+    background-position: top, top;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 27px;
+    color: $primary__fonts-color;
+  }
+
   @media (min-resolution: 2dppx) {
     background:
       url("../../../../img/index/background-hero@2x.jpg"),
@@ -17,6 +30,15 @@
     background-repeat: no-repeat;
     background-position: top, top;
     background-size: 320px auto, auto;
+
+    @supports (background: url("../../../../img/index/background-hero@2x.webp")) {
+      background:
+        url("../../../../img/index/background-hero@2x.webp"),
+        linear-gradient(180deg, #63a63a 63%, transparent 63%);
+      background-repeat: no-repeat;
+      background-position: top, top;
+      background-size: 320px auto, auto;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -34,9 +56,25 @@
     padding-bottom: 184px;
     display: block;
 
+    @supports (background: url("../../../../img/index/background-hero-desktop@1x.webp")) {
+      background:
+        url("../../../../img/index/background-hero-desktop@1x.webp"),
+        linear-gradient(270deg, #63a63a 50%, transparent 50%);
+      background-repeat: no-repeat;
+      background-position: left calc(50% + 521px) bottom, center;
+      padding-top: 224px;
+      padding-bottom: 184px;
+      display: block;
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../../../img/index/background-hero-desktop@2x.jpg");
       background-size: 1041px auto;
+
+      @supports (background: url("../../../../img/index/background-hero-desktop@2x.webp")) {
+        background-image: url("../../../../img/index/background-hero-desktop@2x.webp");
+        background-size: 1041px auto;
+      }
     }
   }
 }

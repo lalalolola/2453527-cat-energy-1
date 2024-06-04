@@ -25,16 +25,6 @@
   padding-right: 40px;
 }
 
-.control__input-icon {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .form__title {
   @include fonts(24px, 26px);
   text-transform: none;
