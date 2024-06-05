@@ -26,6 +26,16 @@
   }
 }
 
+.control__input-icon {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .control__input {
   @include fonts(16px, 18px, $secondary__fonts-color);
   font-family: "Oswald", sans-serif;
@@ -116,7 +126,7 @@
 .control__input--checkbox:checked + .control__mark::after {
   content: "";
   position: absolute;
-  background-image: url("../../../../img/form/checkbox-checked.svg");
+  background-image: url("../../../../img/sprite.svg#checkbox-checked");
   background-position: center;
   width: 18px;
   height: 14px;
@@ -124,7 +134,7 @@
   right: 5px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../../../img/form/checkbox-checked-tablet.svg");
+    background-image: url("../../../../img/sprite.svg#checkbox-checked--tablet");
     width: 26px;
     height: 26px;
     top: 7px;

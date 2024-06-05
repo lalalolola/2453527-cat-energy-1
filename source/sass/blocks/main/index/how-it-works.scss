@@ -91,7 +91,8 @@
   height: 60px;
   top: -2px;
   left: 0;
-  background-image: url("../../../../img/index/how-it-works__item--useful.svg");
+  background-size: 60px 60px;
+  background-image: url("../../../../img/sprite.svg#how-it-works__item--useful");
   background-position: center;
   background-repeat: no-repeat;
   background-color: $base__background-color;
@@ -108,13 +109,13 @@
 }
 
 .how-it-works__item--comfortable::before {
-  background-image: url("../../../../img/index/how-it-works__item--comfortable.svg");
+  background-image: url("../../../../img/sprite.svg#how-it-works__item--comfortable");
 }
 
 .how-it-works__item--few::before {
-  background-image: url("../../../../img/index/how-it-works__item--few.svg");
+  background-image: url("../../../../img/sprite.svg#how-it-works__item--few");
 }
 
 .how-it-works__item--quickly::before {
-  background-image: url("../../../../img/index/how-it-works__item--quickly.svg");
+  background-image: url("../../../../img/sprite.svg#how-it-works__item--quickly");
 }
