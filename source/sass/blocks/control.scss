@@ -34,6 +34,17 @@
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: initial;
+  mask-image: url("../../img/stack.svg#email-input");
+  background-color: #000000;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 20px 20px;
+  transition: background-color 0.2s;
+
+  &--phone {
+    mask-image: url("../../img/stack.svg#phone-input");
+  }
 }
 
 .control__input {
@@ -43,15 +54,14 @@
   border: 1px solid #e7e7e7;
   min-height: 45px;
   padding: 13px 14px 12px;
-  //-webkit-appearance: textfield;
   appearance: textfield;
 
-  &:focus + .control__input-icon path {
-    stroke: #68b738;
+  &:focus + .control__input-icon {
+    background-color: #68b738;
   }
 
-  &--error + .control__input-icon path {
-    stroke: #ff8282;
+  &--error + .control__input-icon {
+    background-color: #ff8282;
   }
 
   &:hover {
@@ -126,7 +136,7 @@
 .control__input--checkbox:checked + .control__mark::after {
   content: "";
   position: absolute;
-  background-image: url("../../../../img/sprite.svg#checkbox-checked");
+  background-image: url("../../img/stack.svg#checkbox-checked");
   background-position: center;
   width: 18px;
   height: 14px;
@@ -134,7 +144,7 @@
   right: 5px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../../../img/sprite.svg#checkbox-checked--tablet");
+    background-image: url("../../img/stack.svg#checkbox-checked--tablet");
     width: 26px;
     height: 26px;
     top: 7px;
