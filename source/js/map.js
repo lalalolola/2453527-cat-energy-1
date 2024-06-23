@@ -92,4 +92,3 @@ function getMarkDate() {
 }
 
 var pixelCenter = map.getGlobalPixelCenter(coordinates);
-
