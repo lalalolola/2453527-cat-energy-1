@@ -252,7 +252,7 @@
   background-color: transparent;
   padding: 0;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: calc(50% - 5px);
   left: var(--pos);
   z-index: 3;
   color: #666666;
@@ -262,7 +262,7 @@
   position: absolute;
   content: "";
   top: 0;
-  bottom: 0;
+  bottom: 10px;
   width: 4px;
   left: var(--pos);
   margin-left: -2px;

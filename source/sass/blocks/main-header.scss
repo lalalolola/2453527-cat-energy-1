@@ -57,8 +57,24 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 13px 0 14px;
-  transition: opacity 0.2s;
 
+  @media (min-width: $tablet-width) {
+    transition: opacity 0.2s;
+    padding: 0;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.main-header__logo-text {
+  padding: 10px;
+  transition: opacity 0.2s;
 
   &:hover {
     opacity: 0.8;
@@ -69,23 +85,40 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
-.main-header__logo-text {
-  padding: 10px;
-
-  @media (min-width: $tablet-width) {
     padding: 16px 13px;
+
+    &:hover {
+      opacity: initial;
+    }
+
+    &:active {
+      opacity: initial;
+    }
   }
 }
 
 .main-header__logo {
   margin-right: 46px;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
+
+    &:hover {
+      opacity: initial;
+    }
+
+    &:active {
+      opacity: initial;
+    }
   }
 }
 
@@ -94,23 +127,25 @@
 }
 
 .main-header__toggle {
+  position: relative;
   border: none;
   cursor: pointer;
   background-color: transparent;
   width: 24px;
-  height: 24px;
+  height: 18px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   padding: 0;
   margin-left: auto;
+  margin-top: -2px;
+  transition: opacity 0.2s;
 
-  & .main-header__toggle-line {
-    transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.8;
   }
 
-  &:hover .main-header__toggle-line {
-    opacity: 0.8;
+  &:active {
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {
@@ -126,13 +161,41 @@
   display: block;
   background-color: $primary__fonts-color;
   width: 24px;
-  min-height: 2px;
+  height: 2px;
+  transform: scale(1);
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.main-header__toggle-line:not(:last-child) {
-  margin-bottom: 6px;
+.main-header__toggle::before, .main-header__toggle::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  background-color: $primary__fonts-color;
+}
+
+.main-header__toggle::before {
+  top: 0;
+}
+
+.main-header__toggle::after {
+  bottom: 0;
+}
+
+.main-header__toggle.main-header__toggle--active .main-header__toggle-line {
+  transform: scale(0);
+}
+
+.main-header__toggle.main-header__toggle--active::before {
+  top: 50%;
+  transform: rotate(-47deg) translate(0, -50%);
+}
+
+.main-header__toggle.main-header__toggle--active::after {
+  bottom: 50%;
+  transform: rotate(47deg) translate(0, 50%);
 }

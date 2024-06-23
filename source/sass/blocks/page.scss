@@ -8,7 +8,7 @@
   display: grid;
   margin: 0 auto;
   grid-template-rows: min-content 1fr min-content;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Tahoma", sans-serif;
 
   @media (min-width: $tablet-width) {
     @include fonts(16px, 24px);

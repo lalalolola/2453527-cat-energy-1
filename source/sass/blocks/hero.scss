@@ -3,10 +3,10 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 27px;
-  background: image-set(url("../../img/index/background-hero@1x.webp") type("image/webp") 1x,
-    url("../../img/index/background-hero@2x.webp") type("image/webp") 2x,
-    url("../../img/index/background-hero@1x.jpg") 1x,
-    url("../../img/index/background-hero@2x.jpg") 2x),
+  background: image-set(url("../img/index/background-hero@1x.webp") type("image/webp") 1x,
+    url("../img/index/background-hero@2x.webp") type("image/webp") 2x,
+    url("../img/index/background-hero@1x.jpg") 1x,
+    url("../img/index/background-hero@2x.jpg") 2x),
     linear-gradient(180deg, #63a63a 63%, transparent 63%);
   background-repeat: no-repeat;
   color: $primary__fonts-color;
@@ -18,10 +18,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: image-set(url("../../img/index/background-hero-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/index/background-hero-desktop@2x.webp") type("image/webp") 2x,
-      url("../../img/index/background-hero-desktop@1x.jpg") 1x,
-      url("../../img/index/background-hero-desktop@2x.jpg") 2x),
+    background: image-set(url("../img/index/background-hero-desktop@1x.webp") type("image/webp") 1x,
+      url("../img/index/background-hero-desktop@2x.webp") type("image/webp") 2x,
+      url("../img/index/background-hero-desktop@1x.jpg") 1x,
+      url("../img/index/background-hero-desktop@2x.jpg") 2x),
       linear-gradient(270deg, #63a63a 50%, transparent 50%);
     background-repeat: no-repeat;
     background-position: left calc(50% + 521px) bottom, center;

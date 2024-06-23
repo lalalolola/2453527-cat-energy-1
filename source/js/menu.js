@@ -10,4 +10,5 @@ header.classList.add("main-header--decoration");
 buttonOpenNav.onclick = function () {
   nav.classList.toggle('main-nav--opened');
   nav.classList.toggle('main-nav--closed');
+  buttonOpenNav.classList.toggle('main-header__toggle--active');
 };
