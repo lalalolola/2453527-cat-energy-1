@@ -19,7 +19,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    gap: 40px 80px;
   }
 }
 
@@ -76,7 +76,7 @@
   position: absolute;
   width: 50px;
   height: 53px;
-  background-image: url("../../img/index/cat-slim.svg");
+  background-image: url("../img/index/cat-slim.svg");
   background-size: 100%;
   top: 21px;
   left: 20px;
@@ -99,7 +99,7 @@
 }
 
 .programs__item--to-build::before {
-  background-image: url("../../img/index/cat-pro.svg");
+  background-image: url("../img/index/cat-pro.svg");
   width: 67px;
   height: 50px;
   top: 24px;
@@ -167,7 +167,7 @@
     position: absolute;
     width: 24px;
     height: 10px;
-    mask-image: url("../../img/stack.svg#arrow");
+    mask-image: url("../img/icons/stack.svg#arrow");
     mask-position: right;
     mask-repeat: no-repeat;
     background-color: #000000;

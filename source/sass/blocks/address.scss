@@ -81,7 +81,16 @@
 .address__map-image {
   position: absolute;
   top: 0;
-  left: 50%;
-  margin-left: -160px;
   z-index: -1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.address__map-api {
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
