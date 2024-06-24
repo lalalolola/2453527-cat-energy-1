@@ -47,7 +47,7 @@ const YAMAP_DATA = {
       // Необходимо указать данный тип макета.
       iconLayout: 'default#image',
       // Своё изображение иконки метки.
-      iconImageHref: '../img/map-pin@1x.png',
+      iconImageHref: '../img/map-pin.png',
       // Размеры метки.
       iconImageSize: [57, 53],
       // Смещение левого верхнего угла иконки относительно
@@ -56,13 +56,13 @@ const YAMAP_DATA = {
     },
     tablet: {
       iconLayout: 'default#image',
-      iconImageHref: '../img/map-pin-tablet@1x.png',
+      iconImageHref: '../img/map-pin-tablet.png',
       iconImageSize: [113, 106],
       iconImageOffset: [-50, -55]
     },
     desktop: {
       iconLayout: 'default#image',
-      iconImageHref: '../img/map-pin-tablet@1x.png',
+      iconImageHref: '../img/map-pin-tablet.png',
       iconImageSize: [113, 106],
       iconImageOffset: [-50, -55]
     }
