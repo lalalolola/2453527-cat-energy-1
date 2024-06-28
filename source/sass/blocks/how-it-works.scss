@@ -57,6 +57,7 @@
 .how-it-works__item {
   color: $secondary__fonts-color;
   font-family: "Lato", sans-serif;
+  display: flex;
   align-content: center;
   margin-bottom: 26px;
   min-height: 54px;

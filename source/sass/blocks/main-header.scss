@@ -10,17 +10,6 @@
   }
 }
 
-.main-header--index-desktop {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: transparent;
-  }
-}
-
 .main-header--decoration::after {
   position: absolute;
   content: "";

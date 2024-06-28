@@ -9,6 +9,9 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -89,22 +92,22 @@
               <h2 class="visually-hidden">Предпочитаемая программа</h2>
               <ul class="form__programs-list">
                 <li class="form__programs-item">
-                  <label class="control">
-                    <input class="visually-hidden control__input--radio" type="radio" name="program" value="to-lose" checked>
+                  <label class="control control--programs">
+                    <input class="visually-hidden control__input-radio" type="radio" name="program" value="to-lose" checked>
                     <span class="control__mark"></span>
                     <span class="control__label">Похудение</span>
                   </label>
                 </li>
                 <li class="form__programs-item">
-                  <label class="control">
-                    <input class="visually-hidden control__input--radio" type="radio" name="program" value="to-build">
+                  <label class="control control--programs">
+                    <input class="visually-hidden control__input-radio" type="radio" name="program" value="to-build">
                     <span class="control__mark"></span>
                     <span class="control__label">Набор массы</span>
                   </label>
                 </li>
                 <li class="form__programs-item">
-                  <label class="control">
-                    <input class="visually-hidden control__input--radio" type="radio" name="program" value="advice">
+                  <label class="control control--programs">
+                    <input class="visually-hidden control__input-radio" type="radio" name="program" value="advice">
                     <span class="control__mark"></span>
                     <span class="control__label">Не знаю (нужен ваш совет)</span>
                   </label>
@@ -127,7 +130,7 @@
                 </label>
                 <label class="form__label control form__label--phone">
                   <span class="control__label">Телефон:*</span>
-                  <input class="form__input control__input" type="text" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <input class="form__input control__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                   <span class="control__input-icon control__input-icon--phone"></span>
                 </label>
               </div>
@@ -140,7 +143,7 @@
               </div>
             </div>
             <div class="container container--form">
-              <label>
+              <label class="control control--special">
                 <textarea class="form__input control__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </div>
@@ -154,29 +157,29 @@
             <div class="container container--form">
               <ul class="form__optional-list">
                 <li class="form__optional-item">
-                  <label class="control">
-                    <input class="visually-hidden control__input--checkbox" type="checkbox" value="sweetener" name="optional" checked>
+                  <label class="control control--optional">
+                    <input class="visually-hidden control__input-checkbox" type="checkbox" value="sweetener" name="optional" checked>
                     <span class="control__mark"></span>
                     <span class="control__label">сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form__optional-item">
-                  <label class="control">
-                    <input class="visually-hidden control__input--checkbox" type="checkbox" value="water" name="optional">
+                  <label class="control control--optional">
+                    <input class="visually-hidden control__input-checkbox" type="checkbox" value="water" name="optional">
                     <span class="control__mark"></span>
                     <span class="control__label">питьевая вода</span>
                   </label>
                 </li>
                 <li class="form__optional-item">
-                  <label class="control">
-                    <input class="visually-hidden control__input--checkbox" type="checkbox" value="milk" name="optional">
+                  <label class="control control--optional">
+                    <input class="visually-hidden control__input-checkbox" type="checkbox" value="milk" name="optional">
                     <span class="control__mark"></span>
                     <span class="control__label">молоко</span>
                   </label>
                 </li>
                 <li class="form__optional-item">
-                  <label class="control">
-                    <input class="visually-hidden control__input--checkbox" type="checkbox" value="vitamins" name="optional">
+                  <label class="control control--optional">
+                    <input class="visually-hidden control__input-checkbox" type="checkbox" value="vitamins" name="optional">
                     <span class="control__mark"></span>
                     <span class="control__label">витамины</span>
                   </label>
@@ -216,7 +219,7 @@
             <source srcset="img/footer/map-tablet@1x.png 1x, img/footer/map-tablet@2x.png 2x" width="768" height="400" media="(min-width: 768px)">
             <img class="address__map-image" src="img/footer/map@1x.png" srcset="img/footer/map@2x.png 2x" width="320" height="362" alt="Карта нашего здания">
           </picture>
-          <div class="address__map-api" id="map"></div>
+          <iframe class="address__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.41592113432!2d30.321549625619728!3d59.93935666349631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1712505134300!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>
@@ -273,7 +276,5 @@
       </div>
     </footer>
     <script src="js/menu.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6704c126-ad67-49ab-929b-9ef4cf40da9d" type="text/javascript"></script>
-    <script src="js/map.js" type="text/javascript"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -18,6 +19,16 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 110px;
+    padding-bottom: 184px;
+    display: block;
+  }
+}
+
+.hero::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
     background: image-set(url("../img/index/background-hero-desktop@1x.webp") type("image/webp") 1x,
       url("../img/index/background-hero-desktop@2x.webp") type("image/webp") 2x,
       url("../img/index/background-hero-desktop@1x.jpg") 1x,
@@ -25,9 +36,10 @@
       linear-gradient(270deg, #63a63a 50%, transparent 50%);
     background-repeat: no-repeat;
     background-position: left calc(50% + 521px) bottom, center;
-    padding-top: 224px;
-    padding-bottom: 184px;
-    display: block;
+    width: 100%;
+    bottom: 0;
+    top: -50%;
+    z-index: -2;
   }
 }
 

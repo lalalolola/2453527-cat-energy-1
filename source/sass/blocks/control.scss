@@ -20,7 +20,11 @@
   }
 }
 
-.form__programs .control {
+.control--special {
+  display: block;
+}
+
+.control--programs {
   @media (min-width: $tablet-width) {
     column-gap: 20px;
   }
@@ -111,11 +115,11 @@
   }
 }
 
-.control__input--radio + .control__mark {
+.control__input-radio + .control__mark {
   border-radius: 50%;
 }
 
-.control__input--radio:checked + .control__mark::after {
+.control__input-radio:checked + .control__mark::after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -132,7 +136,7 @@
   }
 }
 
-.control__input--checkbox:checked + .control__mark::after {
+.control__input-checkbox:checked + .control__mark::after {
   content: "";
   position: absolute;
   background-image: url("../img/icons/stack.svg#checkbox-checked");
@@ -151,10 +155,35 @@
   }
 }
 
-.form__optional .control {
+.control--optional {
   column-gap: 15px;
 
   @media (min-width: $tablet-width) {
     column-gap: 20px;
+  }
+}
+
+.control__input-checkbox:focus + .control__mark,
+.control__input-radio:focus + .control__mark {
+  outline: 2px solid $secondary__fonts-color;
+}
+
+.control__input-checkbox:focus:not(:focus-visible) + .control__mark,
+.control__input-radio:focus:not(:focus-visible) + .control__mark {
+  outline: none;
+}
+
+.control__input-checkbox:focus-visible + .control__mark,
+.control__input-radio:focus-visible + .control__mark {
+  outline: 2px solid $secondary__fonts-color;
+}
+
+.control:has(.control__input-checkbox:disabled),
+.control:has(.control__input-radio:disabled) {
+  opacity: 0.3;
+  cursor: initial;
+
+  &:active {
+    opacity: initial;
   }
 }
