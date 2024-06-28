@@ -1,0 +1,25 @@
+.catalog {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+  }
+}
+
+.catalog__title {
+  @include fonts(36px, 36px);
+  margin: 0 0 41px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(60px, 60px);
+    margin: 0 0 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
+  }
+}
