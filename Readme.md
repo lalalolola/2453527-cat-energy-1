@@ -2,7 +2,7 @@
 
 ## Ссылка на github pages 
 
-* [Sedona](https://lalalolola.github.io/2453527-cat-energy-1/catalog.html).
+* [Cat-Energy](https://lalalolola.github.io/2453527-cat-energy-1/catalog.html).
 
 ## О проекте
 
